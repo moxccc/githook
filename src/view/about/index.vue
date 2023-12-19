@@ -22,11 +22,11 @@ ws.value.onmessage = async function (event) {
       data = msgpack.decode(new Uint8Array(arrayBuffer))
     } else {
       // 如果 event.data 已经是 ArrayBuffer 或 Uint8Array
+      // eslint-disable-next-line no-unused-vars
       data = msgpack.decode(new Uint8Array(event.data))
     }
-    console.log(data) // 解码后的数据
   } catch (error) {
-    console.error('解码错误', error)
+    /* empty */
   }
 }
 const fk = () => {

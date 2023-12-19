@@ -1,12 +1,12 @@
 <template>
-    <div>
-        <button @click="fk">啦啦啦我复活啦</button>
-    </div>
+  <div>
+    <button @click="fk">啦啦啦我复活啦</button>
+  </div>
 </template>
 
 <script setup>
-const fk=()=>{
-    alert("run")
+const fk = () => {
+  alert('run')
 }
 </script>
 
